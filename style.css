@@ -1,0 +1,529 @@
+body{
+    background-color: #8CC461;
+}
+
+.upper-box{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 158px;
+    top: 62px;
+    left: 240px;
+    border-radius: 13px;
+    border: 2px solid #FFFFFF;
+    color: white;
+    margin: auto;
+    width: 60%;
+}
+
+.text{
+    width: 135px;
+    height: 37px;
+    top: 78px;
+    left: 258px;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.scores{
+    width: 139px;
+    height: 128px;
+    top: 77px;
+    left: 713px;
+    border-radius: 9px;
+    background: #FFFFFF;
+    color: black;
+    margin-right: 20px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.player_score,.comp_score{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.fist-img,.hand-img,.scissors-img,.player-input,
+.player_choice{
+    width: 110px;
+    height: 110px;
+    top: 329px;
+    left: 477px;
+    border: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fist-img{
+    border: 16px solid #0074B6;
+    position: fixed;
+    top:33%;
+    left:35.3%;
+    right: 0;
+    bottom: 0;
+}
+
+.hand-img{
+    border: 16px solid #BD00FF;
+    position: fixed;
+    top:60%;
+    left:45%;
+    right: 0;
+    bottom: 0;
+}
+
+.scissors-img{
+    border: 16px solid #FFA943;
+    position: fixed;
+    top:33%;
+    left:54%;
+    right: 0;
+    bottom: 0;
+}
+
+#line-1{
+    position: fixed;
+    height: 20%;
+    top:28%;
+    left:0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background: #000000A3;
+    border: 10px solid #000000A3;
+    transform: rotate(90deg);
+    opacity: 64%;
+}
+
+#line-2{
+    position: fixed;
+    height: 20%;
+    top:42%;
+    left:-15%;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background: #000000A3;
+    border: 10px solid #000000A3;
+    transform: rotate(-40deg);
+    opacity: 64%;
+}
+
+#line-3{
+    position: fixed;
+    height: 20%;
+    top:42%;
+    left:13%;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background: #000000A3;
+    border: 10px solid #000000A3;
+    transform: rotate(30deg);
+    opacity: 64%;
+}
+
+.choices{
+    /* display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center; */
+}
+
+.game-rules{
+    color: white;
+    font-family: Roboto;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 156px;
+    height: 27px;
+    top: 25px;
+    left: 61px;
+    margin-top: 5px;
+    padding-left: 24%;
+
+}
+
+li::marker{
+    color: #FFD600;
+}
+
+ul{
+    margin-left: 8px;
+    padding-left: 8px;
+    color: white;
+    list-style-type:square;
+}
+
+.rules-text{
+    width: 278px;
+    height: 290px;
+    top: 330px;
+    left: 964px;
+    border-radius: 13px;
+    border: 7px;
+    background: linear-gradient(0deg, #004429, #004429),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    border: 7px solid #FFFFFF;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    top:25vh;
+    left: 74%;
+    right: 0;
+    bottom: 0;
+}
+
+.close_button{
+    width: 50px;
+    height: 50px;
+    top: 300px;
+    left: 1217px;
+    border: 5px;
+    background: linear-gradient(0deg, #FF0000, #FF0000),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+
+    
+
+}
+
+.close{
+    display: flex;
+    position: relative;
+    top:27vh;
+    left: 93%;
+    right: 0;
+    bottom: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.rules-button{
+    position: fixed;
+    top:93vh;
+    left: 86%;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color: #8CC461;
+    width: 119px;
+    height: 40px;
+    border-radius: 5px;
+    border: 5px;
+    border-color: white;
+    border: 2px solid #FFFFFF
+}
+
+.circle_3{
+    width: 150px;
+    height: 150px;
+    background-color: #3b6720b5;
+    z-index: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.circle_2{
+    width: 210px;
+    height: 210px;
+    background-color: #1da82b86;
+    z-index: 3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle_1{
+    width: 270px;
+    height: 270px;
+    background-color: #2E9A2563;
+    z-index: 5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rock_selected{
+
+    background-color: white;
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 15px solid #0074B6;
+    border-radius: 50%;
+}
+
+#scissors_selected{
+    
+
+    background-color: white;
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 15px solid #BD00FF;
+    border-radius: 50%;
+}
+
+#paper_selected{
+
+    background-color: white;
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 15px solid #FFA943;
+    border-radius: 50%;
+}
+
+.result{
+    display: flex;
+    gap: 30px;
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.result_details p{
+    font-family: "Roboto";
+    font-size: 39px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+}
+.player_choice_win{
+    position: absolute;
+    top: 350px;
+}
+.player_choice p{
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: white;
+    
+}
+.computer_choice p{
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: white;
+}
+.computer_choice_win{
+    position: absolute;
+    top: 50%;
+}
+
+.result_details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.player_choice{
+    display: flex;
+    flex-direction: column;
+    width: 111px;
+    height: 180px;
+}
+
+.play_again{
+    width: 174px;
+    height: 44px;
+    border: 2px solid #6B6B6B;
+    border-radius: 8px;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.next{
+    position: fixed;
+    top:93vh;
+    left: 75%;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color: #8CC461;
+    width: 119px;
+    height: 40px;
+    border-radius: 5px;
+    border: 5px;
+    border-color: white;
+    border: 2px solid #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.trophy{
+    position:fixed;
+    top: 28%;
+    right: 40%;
+    left: 43%;
+    bottom: 0;
+}
+
+.p1{
+    width: 700px;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    top: 45%;
+    right: 40%;
+    left: 27%;
+    bottom: 0;
+    font-family: Roboto;
+    font-size: 91px;
+    font-weight: 600;
+    line-height: 107px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+}
+
+.p2{
+    width: 700px;
+    color: white;
+    position: fixed;
+    top: 68%;
+    right: 0;
+    left: 36%;
+    bottom: 0;
+}
+
+.play_game{
+    border-radius: 9px;
+    color: black;
+    background-color: white;
+    width: 180px;
+    height: 50px;
+    position:fixed;
+    top: 83%;
+    left: 44%;
+    text-align: center;
+    border-color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+}
+
+#star1{
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    right: 0;
+    bottom: 0;
+}
+
+#star2{
+    position: fixed;
+    top: 39%;
+    left: 30%;
+    right: 0;
+    bottom: 0;
+}
+
+#star3{
+    position: fixed;
+    top: 40%;
+    left: 39%;
+    right: 0;
+    bottom: 0;
+}
+
+#star5{
+    position: fixed;
+    top: 23%;
+    left: 55%;
+    right: 0;
+    bottom: 0;
+}
+
+#star6{
+    position: fixed;
+    top: 25%;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+}
+
+#star9{
+    position: fixed;
+    top: 40%;
+    left: 57%;
+    right: 0;
+    bottom: 0;
+}
+
+#star7{
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    right: 0;
+    bottom: 0;
+}
+
+.won_button{
+    position: fixed;
+    top: 45.5%;
+}

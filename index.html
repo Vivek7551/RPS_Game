@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="upper-box">
+        <div class="text">
+            <div>ROCK</div>
+            <div>PAPER</div>
+            <div>SCISSORS</div>
+        </div>
+
+        <div class="display">
+            <div class="scores">
+                <p>COMPUTER SCORE</p>
+                <p class="comp_score">0</p>
+            </div>
+    
+            <div class="scores">
+                <p>YOUR<br> SCORE</p>
+                <p class="player_score">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="triangle">
+        <hr id="line-1" class="lines">
+        <hr id="line-2" class="lines">
+        <hr id="line-3" class="lines">
+    </div>
+
+    <div class="choices">
+        <div class="fist-img">
+            <button class="player-input" id="rock">
+                <img src="rock.png" alt="Fist-image">
+            </button>
+        </div>
+
+        <div class="scissors-img">
+            <button class="player-input" id="scissors">
+                <img src="scissors.png" alt="Scissors-image">
+            </button>
+        </div>
+    
+        <div class="hand-img">
+            <button class="player-input" id="paper">
+                <img src="paper.png" alt="hand-image">
+            </button>
+        </div>
+    </div>
+
+<div class="close" style="display: none;">
+    <button class="close_button" >
+        <img src="X.png" alt="close">;
+    </button>
+</div>
+    <section class="Rules">
+        <div class="container">
+
+            <div class="rules-text" style="display: none;">
+                <p class="game-rules">Game Rules</p>
+                <ul>
+                    <li>
+                        Rock beats scissors, scissors beat paper, and paper beats rock.
+                    </li>
+                    <br>
+                    <li>
+                        Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”
+                    </li>
+                    <br>
+                    <li>
+                        Use rock, paper, scissors to settle minor decisions or simply play to pass the time
+                    </li>
+                    <br>
+                    <li>
+                        If both players lay down the same hand, each player lays down another hand
+                    </li>
+                </ul>
+            </div>
+    
+            
+        </div>
+        
+        <div class="open_buttons">
+            <button class="rules-button">RULES</button>
+        
+
+            <button class="next" style="display: none;">
+                NEXT
+            </button>
+        </div>
+    </section>
+    
+    <section class="result">
+        
+    </section>
+
+    <section class="hurray_page"></section>;
+
+    <script src="main.js"></script>
+</body>
+</html>
